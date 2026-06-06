@@ -1,0 +1,278 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAGERS</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0A0F16;
+      color: #E0E0E0;
+      line-height: 1.8;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-size: 13px;
+      letter-spacing: 8px;
+      color: #888;
+      margin-bottom: 80px;
+    }
+
+    .hero {
+      margin-bottom: 100px;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: 300;
+      color: #F8F9FA;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #888;
+      max-width: 500px;
+    }
+
+    .section {
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #F8F9FA;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #1E2631;
+    }
+
+    p {
+      font-size: 15px;
+      color: #B0B0B0;
+      margin-bottom: 16px;
+    }
+
+    .features {
+      display: grid;
+      gap: 20px;
+    }
+
+    .feature {
+      padding: 20px;
+      border: 1px solid #1E2631;
+      background: #111823;
+      border-radius: 14px;
+    }
+
+    .feature-title {
+      font-size: 15px;
+      color: #F8F9FA;
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 12px;
+      background: #FEE500;
+      color: #111;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #1E2631;
+      color: #E0E0E0;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .quote {
+      margin-top: 32px;
+      padding-left: 18px;
+      border-left: 2px solid #1E2631;
+      color: #777;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    a {
+      color: #FEE500;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 100px;
+      padding-top: 24px;
+      border-top: 1px solid #1E2631;
+      font-size: 13px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .subtitle {
+        font-size: 15px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="brand">P A G E R S</div>
+
+    <section class="hero">
+      <h1>
+        Save the lines<br />
+        that stayed with you.
+      </h1>
+
+      <p class="subtitle">
+        PAGERS는 책 속 문장과 감정을 기록하고,
+        AI 기반 추천을 통해 새로운 문장을 발견할 수 있는 독서 기록 앱입니다.
+      </p>
+
+      <div class="buttons">
+        <a
+          class="button"
+          href="앱스토어링크"
+          target="_blank"
+        >
+          App Store
+        </a>
+
+        <a
+          class="button secondary"
+          href="./privacy.html"
+        >
+          개인정보처리방침
+        </a>
+      </div>
+
+      <div class="quote">
+        “어떤 문장은 오래 남습니다.”
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>About</h2>
+
+      <p>
+        PAGERS는 단순한 메모 앱이 아닙니다.
+      </p>
+
+      <p>
+        책을 읽다가 마음에 남은 문장,
+        오늘의 감정과 어울리는 문장,
+        다시 보고 싶은 문장들을
+        조용히 기록하고 보관할 수 있도록 만들어졌습니다.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Features</h2>
+
+      <div class="features">
+
+        <div class="feature">
+          <div class="feature-title">
+            AI 문장 추천
+          </div>
+
+          <div class="feature-desc">
+            감정과 분위기에 맞는 새로운 문장을 추천합니다.
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-title">
+            문장 보관함
+          </div>
+
+          <div class="feature-desc">
+            저장한 문장을 언제든 다시 꺼내볼 수 있습니다.
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-title">
+            조용한 디자인
+          </div>
+
+          <div class="feature-desc">
+            독서의 분위기를 해치지 않는 미니멀한 인터페이스를 지향합니다.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+
+      <p>
+        문의 및 제안:
+        <a href="mailto:gg3987050505@gmail.com">
+          gg3987050505@gmail.com
+        </a>
+      </p>
+    </section>
+
+    <div class="footer">
+      © 2026 PAGERS
+    </div>
+
+  </div>
+</body>
+</html>
+```

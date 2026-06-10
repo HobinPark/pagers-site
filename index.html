@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,7 +7,11 @@
   <title>PAGERS</title>
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -99,23 +104,31 @@
       display: inline-block;
       padding: 14px 20px;
       border-radius: 12px;
-      background: #FEE500;
-      color: #111;
       text-decoration: none;
       font-size: 14px;
       font-weight: 600;
       transition: 0.2s ease;
     }
 
-    .button.secondary {
-      background: transparent;
-      border: 1px solid #1E2631;
-      color: #E0E0E0;
-    }
-
     .button:hover {
       opacity: 0.9;
       transform: translateY(-1px);
+    }
+
+    .button.appstore {
+      background: #ffffff;
+      color: #111;
+    }
+
+    .button.playstore {
+      background: #34A853;
+      color: white;
+    }
+
+    .button.privacy {
+      background: transparent;
+      border: 1px solid #1E2631;
+      color: #E0E0E0;
     }
 
     .quote {
@@ -161,23 +174,7 @@
         width: 100%;
         text-align: center;
       }
-      .button.appstore {
-        background: #ffffff;
-        color: #111;
-      }
-      
-      .button.playstore {
-        background: #34A853;
-        color: white;
-      }
-      
-      .button.privacy {
-        background: transparent;
-        border: 1px solid #1E2631;
-        color: #E0E0E0;
-      }
-      
-          }
+    }
   </style>
 </head>
 
@@ -198,30 +195,30 @@
       </p>
 
       <div class="buttons">
-      
+
         <a
-          class="button"
+          class="button appstore"
           href="https://apps.apple.com/kr/app/id6775206776"
           target="_blank"
         >
           App Store
         </a>
-      
+
         <a
-          class="button secondary"
+          class="button playstore"
           href="https://play.google.com/store/apps/details?id=com.myapp.pagers"
           target="_blank"
         >
           Google Play
         </a>
-      
+
         <a
-          class="button secondary"
+          class="button privacy"
           href="/privacy"
         >
           개인정보처리방침
         </a>
-      
+
       </div>
 
       <div class="quote">
